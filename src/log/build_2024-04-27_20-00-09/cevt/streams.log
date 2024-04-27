@@ -1,6 +1,0 @@
-[0.020s] Invoking command in '/workspaces/CEVT/src/build/cevt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
-[0.056s] [ 33%] [32mBuilding CXX object CMakeFiles/cevt.dir/src/cevt.cpp.o[0m
-[0.589s] gmake[2]: *** [CMakeFiles/cevt.dir/build.make:76: CMakeFiles/cevt.dir/src/cevt.cpp.o] Interrupt
-[0.589s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cevt.dir/all] Interrupt
-[0.589s] gmake: *** [Makefile:146: all] Interrupt
-[0.596s] Invoked command in '/workspaces/CEVT/src/build/cevt' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20

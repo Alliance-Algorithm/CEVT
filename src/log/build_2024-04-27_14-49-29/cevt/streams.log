@@ -1,3 +1,0 @@
-[0.019s] Invoking command in '/workspaces/CEVT/src/build/cevt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
-[0.045s] [35m[1mConsolidate compiler generated dependencies of target cevt[0m
-[0.059s] [ 33%] [32mBuilding CXX object CMakeFiles/cevt.dir/src/cevt.cpp.o[0m

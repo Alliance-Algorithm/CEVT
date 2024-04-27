@@ -1,5 +1,0 @@
-In file included from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:17[m[K:
-[01m[K/workspaces/CEVT/src/cevt/src/attitude_algorithm.hpp:[m[K In member function ‘[01m[Kvoid EngineerVisual::AttitudeAlgorithm::Processing(cv::Mat&)[m[K’:
-[01m[K/workspaces/CEVT/src/cevt/src/attitude_algorithm.hpp:169:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klast[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
-  169 |     int [01;35m[Klast[m[K = -1;
-      |         [01;35m[K^~~~[m[K
