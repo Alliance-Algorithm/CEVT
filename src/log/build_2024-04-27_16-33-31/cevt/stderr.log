@@ -1,0 +1,78 @@
+In file included from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19[m[K:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:164:5:[m[K [01;31m[Kerror: [m[Kunterminated comment
+  164 |     [01;31m[K/[m[K*
+      |     [01;31m[K^[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:112:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  112 | }
+      |  [01;31m[K^[m[K
+In file included from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19[m[K:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:38:19:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   38 | class PointDetect [01;36m[K{[m[K
+      |                   [01;36m[K^[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:[m[K In constructor ‘[01m[KEngineerVisual::PointDetect::PointDetect()[m[K’:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:40:19:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KEngineerVisual::PointDetect[m[K’ does not have any field named ‘[01m[Kpnpsolver[m[K’
+   40 |   PointDetect() : [01;31m[Kpnpsolver[m[K() {
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpnpsolver[m[K’ was not declared in this scope; did you mean ‘[01m[KPNPSolver[m[K’?
+   44 |     [01;31m[Kpnpsolver[m[K.SetCameraMatrix(1.722231837421459e+03, 1.724876404292754e+03,
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[KPNPSolver[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:50:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilter[m[K’ was not declared in this scope
+   50 |       [01;31m[Kfilter[m[K.push({});
+      |       [01;31m[K^~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:[m[K In member function ‘[01m[Kvoid EngineerVisual::PointDetect::Calculate(cv::Mat&)[m[K’:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koriginal[m[K’ was not declared in this scope
+   54 |     [01;31m[Koriginal[m[K = cv::Mat(image);
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:68:5:[m[K [01;31m[Kerror: [m[K‘[01m[KProcessing[m[K’ was not declared in this scope; did you mean ‘[01m[KPreprocessing[m[K’?
+   68 |     [01;31m[KProcessing[m[K(image);
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[KPreprocessing[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:[m[K In member function ‘[01m[KEigen::Quaternionf& EngineerVisual::PointDetect::Rotate()[m[K’:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:70:41:[m[K [01;31m[Kerror: [m[Kinvalid initialization of non-const reference of type ‘[01m[KEigen::Quaternionf&[m[K’ {aka ‘[01m[KEigen::Quaternion<float>&[m[K’} from an rvalue of type ‘[01m[K<unresolved overloaded function type>[m[K’
+   70 |   Eigen::Quaternionf &Rotate() { return [01;31m[Krotate[m[K; }
+      |                                         [01;31m[K^~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:[m[K In member function ‘[01m[KEigen::Vector3f& EngineerVisual::PointDetect::Position()[m[K’:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:71:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition[m[K’ was not declared in this scope; did you mean ‘[01m[KPosition[m[K’?
+   71 |   Eigen::Vector3f &Position() { return [01;31m[Kposition[m[K; }
+      |                                        [01;31m[K^~~~~~~~[m[K
+      |                                        [32m[KPosition[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:[m[K In member function ‘[01m[Kbool EngineerVisual::PointDetect::GetR(cv::Mat&, cv::Point2f&, float&)[m[K’:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:117:16:[m[K [01;31m[Kerror: [m[K‘[01m[Koriginal[m[K’ was not declared in this scope
+  117 |     cv::circle([01;31m[Koriginal[m[K, center, radius, cv::Scalar(200), -1, 8, 0);
+      |                [01;31m[K^~~~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:[m[K In member function ‘[01m[Kbool EngineerVisual::PointDetect::GetFlyswatter(cv::Mat&, cv::Point2f&)[m[K’:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:140:24:[m[K [01;31m[Kerror: [m[K‘[01m[Koriginal[m[K’ was not declared in this scope
+  140 |       cv::drawContours([01;31m[Koriginal[m[K, outlines, i, cv::Scalar(100), 4);
+      |                        [01;31m[K^~~~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:22:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knamespace[m[K’ definition is not allowed here
+   22 | [01;31m[Knamespace[m[K EngineerVisual {
+      | [01;31m[K^~~~~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:92:33:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+   92 | int main(int argc, char **argv) [01;31m[K{[m[K
+      |                                 [01;31m[K^[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:112:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  112 | }
+      |  [01;31m[K^[m[K
+In file included from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19[m[K:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:124:60:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  124 |   bool GetFlyswatter(cv::Mat &image, cv::Point2f &rCenter) [01;36m[K{[m[K
+      |                                                            [01;36m[K^[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:162:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KboxIndex[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  162 |     int [01;35m[KboxIndex[m[K[2] = {-1, -1};
+      |         [01;35m[K^~~~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:163:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KboxMaxlength[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  163 |     float [01;35m[KboxMaxlength[m[K[2]{0, 0};
+      |           [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:[m[K At global scope:
+[01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:112:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  112 | }
+      |  [01;31m[K^[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:112:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+In file included from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19[m[K:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:36:26:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   36 | namespace EngineerVisual [01;36m[K{[m[K
+      |                          [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/cevt.dir/build.make:76: CMakeFiles/cevt.dir/src/cevt.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cevt.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

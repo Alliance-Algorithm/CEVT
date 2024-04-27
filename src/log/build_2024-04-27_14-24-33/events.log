@@ -1,0 +1,171 @@
+[0.000000] (-) TimerEvent: {}
+[0.000087] (hikcamera) JobQueued: {'identifier': 'hikcamera', 'dependencies': OrderedDict()}
+[0.000107] (cevt) JobQueued: {'identifier': 'cevt', 'dependencies': OrderedDict([('hikcamera', '/workspaces/CEVT/src/install')])}
+[0.000120] (hikcamera) JobStarted: {'identifier': 'hikcamera'}
+[0.019146] (hikcamera) JobProgress: {'identifier': 'hikcamera', 'progress': 'cmake'}
+[0.019360] (hikcamera) JobProgress: {'identifier': 'hikcamera', 'progress': 'build'}
+[0.019881] (hikcamera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/CEVT/src/build/hikcamera', '--', '-j20', '-l20'], 'cwd': '/workspaces/CEVT/src/build/hikcamera', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/hikcamera'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[0.053132] (hikcamera) StdoutLine: {'line': b'[100%] Built target hikcamera\n'}
+[0.060605] (hikcamera) CommandEnded: {'returncode': 0}
+[0.074851] (hikcamera) JobProgress: {'identifier': 'hikcamera', 'progress': 'install'}
+[0.080000] (hikcamera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/CEVT/src/build/hikcamera'], 'cwd': '/workspaces/CEVT/src/build/hikcamera', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/hikcamera'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[0.084647] (hikcamera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.084784] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib\n'}
+[0.084830] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvUsb3vTL.so.4.3.0.3\n'}
+[0.084864] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvProducerU3V.cti\n'}
+[0.084894] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLAllSerial_gcc447_v3_0.so\n'}
+[0.084924] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVGigEVisionSDK.so.4.3.0.3\n'}
+[0.084979] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVGigEVisionSDK.so\n'}
+[0.085006] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libGenCP_gcc447_v3_0.so\n'}
+[0.085036] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLProtocol_gcc447_v3_0.so\n'}
+[0.085065] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVRender.so\n'}
+[0.085094] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libFormatConversion.so\n'}
+[0.085122] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControlWrapper.so\n'}
+[0.085149] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerGEV.cti\n'}
+[0.085177] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerCML.cti\n'}
+[0.085223] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvProducerGEV.cti\n'}
+[0.085253] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerXoF.cti\n'}
+[0.085283] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libLog_gcc447_v3_0.so\n'}
+[0.085328] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/liblog4cpp_gcc447_v3_0.so\n'}
+[0.085357] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libswscale.so\n'}
+[0.085384] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControlWrapper.so.4.3.0.3\n'}
+[0.085414] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCamLVision.so\n'}
+[0.085458] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControl.so\n'}
+[0.085488] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMediaProcess.so\n'}
+[0.085532] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVFGControl.so\n'}
+[0.085561] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLSerHvc.so\n'}
+[0.085588] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerCXP.cti\n'}
+[0.085614] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControl.so.4.3.0.4\n'}
+[0.085646] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libavutil.so\n'}
+[0.085672] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCamLVision.so.4.3.0.3\n'}
+[0.085698] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libGCBase_gcc447_v3_0.so\n'}
+[0.085723] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLSerCOM.so\n'}
+[0.085749] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvUsb3vTL.so\n'}
+[0.085775] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include\n'}
+[0.085801] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/hikcamera\n'}
+[0.085826] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp\n'}
+[0.085851] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/library_path.sh\n'}
+[0.085877] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/library_path.dsv\n'}
+[0.085903] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libhikcamera.so\n'}
+[0.085930] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/package_run_dependencies/hikcamera\n'}
+[0.085957] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/parent_prefix_path/hikcamera\n'}
+[0.085982] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/ament_prefix_path.sh\n'}
+[0.086010] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/ament_prefix_path.dsv\n'}
+[0.086035] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/path.sh\n'}
+[0.086063] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/path.dsv\n'}
+[0.086091] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.bash\n'}
+[0.086118] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.sh\n'}
+[0.086146] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.zsh\n'}
+[0.086173] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.dsv\n'}
+[0.086201] (hikcamera) StdoutLine: {'line': b'-- Installing: /workspaces/CEVT/src/install/share/hikcamera/package.dsv\n'}
+[0.086231] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/packages/hikcamera\n'}
+[0.086258] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.086286] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.086331] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.086407] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/hikcameraConfig.cmake\n'}
+[0.086490] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/hikcameraConfig-version.cmake\n'}
+[0.086557] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/package.xml\n'}
+[0.086871] (hikcamera) CommandEnded: {'returncode': 0}
+[0.099679] (-) TimerEvent: {}
+[0.144999] (hikcamera) JobEnded: {'identifier': 'hikcamera', 'rc': 0}
+[0.145299] (cevt) JobStarted: {'identifier': 'cevt'}
+[0.164802] (cevt) JobProgress: {'identifier': 'cevt', 'progress': 'cmake'}
+[0.165196] (cevt) JobProgress: {'identifier': 'cevt', 'progress': 'build'}
+[0.165226] (cevt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/CEVT/src/build/cevt', '--', '-j20', '-l20'], 'cwd': '/workspaces/CEVT/src/build/cevt', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/cevt'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[0.199801] (-) TimerEvent: {}
+[0.201966] (cevt) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/cevt.dir/src/cevt.cpp.o\x1b[0m\n'}
+[0.299892] (-) TimerEvent: {}
+[0.400193] (-) TimerEvent: {}
+[0.500569] (-) TimerEvent: {}
+[0.600949] (-) TimerEvent: {}
+[0.701326] (-) TimerEvent: {}
+[0.801686] (-) TimerEvent: {}
+[0.902060] (-) TimerEvent: {}
+[1.002450] (-) TimerEvent: {}
+[1.102857] (-) TimerEvent: {}
+[1.203217] (-) TimerEvent: {}
+[1.303469] (-) TimerEvent: {}
+[1.403732] (-) TimerEvent: {}
+[1.504093] (-) TimerEvent: {}
+[1.604410] (-) TimerEvent: {}
+[1.704783] (-) TimerEvent: {}
+[1.805165] (-) TimerEvent: {}
+[1.905557] (-) TimerEvent: {}
+[2.005949] (-) TimerEvent: {}
+[2.106322] (-) TimerEvent: {}
+[2.206674] (-) TimerEvent: {}
+[2.307029] (-) TimerEvent: {}
+[2.405328] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.405508] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:173:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpnpsolver\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KPNPSolver\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.405546] (cevt) StderrLine: {'line': b'  173 |   \x1b[01;31m\x1b[Kpnpsolver\x1b[m\x1b[K.Points2D = input_camera;\n'}
+[2.405572] (cevt) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.405598] (cevt) StderrLine: {'line': b'      |   \x1b[32m\x1b[KPNPSolver\x1b[m\x1b[K\n'}
+[2.406632] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:174:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpnpsolver\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KPNPSolver\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.406725] (cevt) StderrLine: {'line': b'  174 |   \x1b[01;31m\x1b[Kpnpsolver\x1b[m\x1b[K.Points3D = input_world;\n'}
+[2.406756] (cevt) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.406782] (cevt) StderrLine: {'line': b'      |   \x1b[32m\x1b[KPNPSolver\x1b[m\x1b[K\n'}
+[2.406806] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:178:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.406832] (cevt) StderrLine: {'line': b'  178 |   \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (pnpsolver.Solve(PNPSolver::METHOD::CV_IPPE) == 0) {\n'}
+[2.406857] (cevt) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.406880] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:191:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before string constant\n'}
+[2.406904] (cevt) StderrLine: {'line': b'  191 |   cv::imshow(\x1b[01;31m\x1b[K"Point of Contours"\x1b[m\x1b[K,\n'}
+[2.406927] (cevt) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.406950] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:191:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before string constant\n'}
+[2.406975] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:191:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Kimshow\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.407001] (cevt) StderrLine: {'line': b'  191 |   \x1b[01;31m\x1b[Kcv\x1b[m\x1b[K::imshow("Point of Contours",\n'}
+[2.407031] (-) TimerEvent: {}
+[2.407090] (cevt) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.407123] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:191:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.407150] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:193:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected identifier before numeric constant\n'}
+[2.407175] (cevt) StderrLine: {'line': b'  193 |   cv::waitKey(\x1b[01;31m\x1b[K10\x1b[m\x1b[K);\n'}
+[2.407199] (cevt) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.407223] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:193:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before numeric constant\n'}
+[2.407248] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:193:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KwaitKey\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.407276] (cevt) StderrLine: {'line': b'  193 |   \x1b[01;31m\x1b[Kcv\x1b[m\x1b[K::waitKey(10);\n'}
+[2.407300] (cevt) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.407324] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:193:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.407349] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KEngineerVisual::PointDetect::PointDetect()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.407373] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:38:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KEngineerVisual::PointDetect\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kpnpsolver\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.407398] (cevt) StderrLine: {'line': b'   38 |   PointDetect() : \x1b[01;31m\x1b[Kpnpsolver\x1b[m\x1b[K() {\n'}
+[2.407421] (cevt) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.411657] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:42:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpnpsolver\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KPNPSolver\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.411730] (cevt) StderrLine: {'line': b'   42 |     \x1b[01;31m\x1b[Kpnpsolver\x1b[m\x1b[K.SetCameraMatrix(1.722231837421459e+03, 1.724876404292754e+03,\n'}
+[2.411770] (cevt) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.411798] (cevt) StderrLine: {'line': b'      |     \x1b[32m\x1b[KPNPSolver\x1b[m\x1b[K\n'}
+[2.415371] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:48:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfilter\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.415447] (cevt) StderrLine: {'line': b'   48 |       \x1b[01;31m\x1b[Kfilter\x1b[m\x1b[K.push({});\n'}
+[2.415482] (cevt) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.419596] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EngineerVisual::PointDetect::Calculate(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.419687] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:52:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Koriginal\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.419733] (cevt) StderrLine: {'line': b'   52 |     \x1b[01;31m\x1b[Koriginal\x1b[m\x1b[K = cv::Mat(image);\n'}
+[2.419762] (cevt) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.420251] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::Quaternionf& EngineerVisual::PointDetect::Rotate()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.420320] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:57:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid initialization of non-const reference of type \xe2\x80\x98\x1b[01m\x1b[KEigen::Quaternionf&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[KEigen::Quaternion<float>&\x1b[m\x1b[K\xe2\x80\x99} from an rvalue of type \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.420357] (cevt) StderrLine: {'line': b'   57 |   Eigen::Quaternionf &Rotate() { return \x1b[01;31m\x1b[Krotate\x1b[m\x1b[K; }\n'}
+[2.420388] (cevt) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.423539] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector3f& EngineerVisual::PointDetect::Position()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.423615] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:58:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kposition\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KPosition\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.423650] (cevt) StderrLine: {'line': b'   58 |   Eigen::Vector3f &Position() { return \x1b[01;31m\x1b[Kposition\x1b[m\x1b[K; }\n'}
+[2.423679] (cevt) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.423704] (cevt) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[KPosition\x1b[m\x1b[K\n'}
+[2.443099] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:\x1b[m\x1b[K At global scope:\n'}
+[2.443238] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:194:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Koriginal\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.443274] (cevt) StderrLine: {'line': b'  194 | } cv::Mat \x1b[01;31m\x1b[Koriginal\x1b[m\x1b[K;\n'}
+[2.443300] (cevt) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.445655] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:204:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.445725] (cevt) StderrLine: {'line': b'  204 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K // namespace EngineerVisual\n'}
+[2.445757] (cevt) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.507240] (-) TimerEvent: {}
+[2.607600] (-) TimerEvent: {}
+[2.707846] (-) TimerEvent: {}
+[2.808131] (-) TimerEvent: {}
+[2.908477] (-) TimerEvent: {}
+[3.008853] (-) TimerEvent: {}
+[3.109203] (-) TimerEvent: {}
+[3.191613] (cevt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cevt.dir/build.make:76: CMakeFiles/cevt.dir/src/cevt.cpp.o] Error 1\n'}
+[3.191879] (cevt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cevt.dir/all] Error 2\n'}
+[3.191962] (cevt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.194407] (cevt) CommandEnded: {'returncode': 2}
+[3.209316] (-) TimerEvent: {}
+[3.230564] (cevt) JobEnded: {'identifier': 'cevt', 'rc': 2}
+[3.241232] (-) EventReactorShutdown: {}

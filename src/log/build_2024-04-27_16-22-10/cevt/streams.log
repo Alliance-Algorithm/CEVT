@@ -1,0 +1,39 @@
+[0.019s] Invoking command in '/workspaces/CEVT/src/build/cevt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target cevt[0m
+[0.061s] [ 33%] [32mBuilding CXX object CMakeFiles/cevt.dir/src/cevt.cpp.o[0m
+[2.287s] [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:[m[K In member function ‘[01m[Kvoid EngineerVisual::CameraNode::thread_main()[m[K’:
+[2.287s] [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:60:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Krotate[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[2.287s]    60 |       auto [01;35m[Krotate[m[K = detecter.Rotate();
+[2.288s]       |            [01;35m[K^~~~~~[m[K
+[3.755s] [ 66%] [32m[1mLinking CXX executable cevt[0m
+[4.060s] [100%] Built target cevt
+[4.074s] Invoked command in '/workspaces/CEVT/src/build/cevt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
+[4.090s] Invoking command in '/workspaces/CEVT/src/build/cevt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/CEVT/src/build/cevt
+[4.094s] -- Install configuration: ""
+[4.094s] -- Up-to-date: /workspaces/CEVT/src/install/include
+[4.094s] -- Up-to-date: /workspaces/CEVT/src/install/include/filter
+[4.094s] -- Up-to-date: /workspaces/CEVT/src/install/include/filter/ekf.hpp
+[4.094s] -- Up-to-date: /workspaces/CEVT/src/install/include/pnp
+[4.094s] -- Up-to-date: /workspaces/CEVT/src/install/include/pnp/pnp_solver.hpp
+[4.094s] -- Up-to-date: /workspaces/CEVT/src/install/include/util
+[4.094s] -- Up-to-date: /workspaces/CEVT/src/install/include/util/fps_counter.hpp
+[4.094s] -- Installing: /workspaces/CEVT/src/install/lib/cevt/cevt
+[4.095s] -- Set runtime path of "/workspaces/CEVT/src/install/lib/cevt/cevt" to ""
+[4.095s] -- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/package_run_dependencies/cevt
+[4.095s] -- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/parent_prefix_path/cevt
+[4.095s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/environment/ament_prefix_path.sh
+[4.095s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/environment/ament_prefix_path.dsv
+[4.095s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/environment/path.sh
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/environment/path.dsv
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/local_setup.bash
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/local_setup.sh
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/local_setup.zsh
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/local_setup.dsv
+[4.096s] -- Installing: /workspaces/CEVT/src/install/share/cevt/package.dsv
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/packages/cevt
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/cmake/cevtConfig.cmake
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/cmake/cevtConfig-version.cmake
+[4.096s] -- Up-to-date: /workspaces/CEVT/src/install/share/cevt/package.xml
+[4.097s] Invoked command in '/workspaces/CEVT/src/build/cevt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/CEVT/src/build/cevt

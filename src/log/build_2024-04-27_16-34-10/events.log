@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000142] (hikcamera) JobQueued: {'identifier': 'hikcamera', 'dependencies': OrderedDict()}
+[0.000161] (cevt) JobQueued: {'identifier': 'cevt', 'dependencies': OrderedDict([('hikcamera', '/workspaces/CEVT/src/install')])}
+[0.000174] (hikcamera) JobStarted: {'identifier': 'hikcamera'}
+[0.018962] (hikcamera) JobProgress: {'identifier': 'hikcamera', 'progress': 'cmake'}
+[0.019575] (hikcamera) JobProgress: {'identifier': 'hikcamera', 'progress': 'build'}
+[0.019620] (hikcamera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/CEVT/src/build/hikcamera', '--', '-j20', '-l20'], 'cwd': '/workspaces/CEVT/src/build/hikcamera', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/hikcamera'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[0.050598] (hikcamera) StdoutLine: {'line': b'[100%] Built target hikcamera\n'}
+[0.056530] (hikcamera) CommandEnded: {'returncode': 0}
+[0.074174] (hikcamera) JobProgress: {'identifier': 'hikcamera', 'progress': 'install'}
+[0.080112] (hikcamera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/CEVT/src/build/hikcamera'], 'cwd': '/workspaces/CEVT/src/build/hikcamera', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/hikcamera'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[0.084382] (hikcamera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.084464] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib\n'}
+[0.084506] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvUsb3vTL.so.4.3.0.3\n'}
+[0.084546] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvProducerU3V.cti\n'}
+[0.084633] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLAllSerial_gcc447_v3_0.so\n'}
+[0.084668] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVGigEVisionSDK.so.4.3.0.3\n'}
+[0.084704] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVGigEVisionSDK.so\n'}
+[0.084740] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libGenCP_gcc447_v3_0.so\n'}
+[0.084776] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLProtocol_gcc447_v3_0.so\n'}
+[0.084812] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVRender.so\n'}
+[0.084847] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libFormatConversion.so\n'}
+[0.084899] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControlWrapper.so\n'}
+[0.084934] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerGEV.cti\n'}
+[0.084970] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerCML.cti\n'}
+[0.085005] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvProducerGEV.cti\n'}
+[0.085063] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerXoF.cti\n'}
+[0.085099] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libLog_gcc447_v3_0.so\n'}
+[0.085134] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/liblog4cpp_gcc447_v3_0.so\n'}
+[0.085314] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libswscale.so\n'}
+[0.085378] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControlWrapper.so.4.3.0.3\n'}
+[0.085435] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCamLVision.so\n'}
+[0.085488] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControl.so\n'}
+[0.085540] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMediaProcess.so\n'}
+[0.085590] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVFGControl.so\n'}
+[0.085641] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLSerHvc.so\n'}
+[0.085692] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerCXP.cti\n'}
+[0.085730] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControl.so.4.3.0.4\n'}
+[0.085792] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libavutil.so\n'}
+[0.085830] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCamLVision.so.4.3.0.3\n'}
+[0.085865] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libGCBase_gcc447_v3_0.so\n'}
+[0.085901] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLSerCOM.so\n'}
+[0.085935] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvUsb3vTL.so\n'}
+[0.085970] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include\n'}
+[0.086003] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/hikcamera\n'}
+[0.086039] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp\n'}
+[0.086077] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/library_path.sh\n'}
+[0.086114] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/library_path.dsv\n'}
+[0.086150] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libhikcamera.so\n'}
+[0.086187] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/package_run_dependencies/hikcamera\n'}
+[0.086224] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/parent_prefix_path/hikcamera\n'}
+[0.086262] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/ament_prefix_path.sh\n'}
+[0.086299] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/ament_prefix_path.dsv\n'}
+[0.086336] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/path.sh\n'}
+[0.086390] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/path.dsv\n'}
+[0.086434] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.bash\n'}
+[0.086473] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.sh\n'}
+[0.086619] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.zsh\n'}
+[0.086657] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.dsv\n'}
+[0.086711] (hikcamera) StdoutLine: {'line': b'-- Installing: /workspaces/CEVT/src/install/share/hikcamera/package.dsv\n'}
+[0.086810] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/packages/hikcamera\n'}
+[0.086893] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.086935] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.086974] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.087012] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/hikcameraConfig.cmake\n'}
+[0.087124] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/hikcameraConfig-version.cmake\n'}
+[0.087163] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/package.xml\n'}
+[0.087426] (hikcamera) CommandEnded: {'returncode': 0}
+[0.099497] (-) TimerEvent: {}
+[0.146107] (hikcamera) JobEnded: {'identifier': 'hikcamera', 'rc': 0}
+[0.146809] (cevt) JobStarted: {'identifier': 'cevt'}
+[0.164494] (cevt) JobProgress: {'identifier': 'cevt', 'progress': 'cmake'}
+[0.164668] (cevt) JobProgress: {'identifier': 'cevt', 'progress': 'build'}
+[0.164796] (cevt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/CEVT/src/build/cevt', '--', '-j20', '-l20'], 'cwd': '/workspaces/CEVT/src/build/cevt', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/cevt'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[0.191604] (cevt) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cevt\x1b[0m\n'}
+[0.199686] (-) TimerEvent: {}
+[0.206606] (cevt) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/cevt.dir/src/cevt.cpp.o\x1b[0m\n'}
+[0.299892] (-) TimerEvent: {}
+[0.400237] (-) TimerEvent: {}
+[0.500591] (-) TimerEvent: {}
+[0.600879] (-) TimerEvent: {}
+[0.701292] (-) TimerEvent: {}
+[0.801535] (-) TimerEvent: {}
+[0.901814] (-) TimerEvent: {}
+[1.002054] (-) TimerEvent: {}
+[1.102435] (-) TimerEvent: {}
+[1.202798] (-) TimerEvent: {}
+[1.303153] (-) TimerEvent: {}
+[1.403527] (-) TimerEvent: {}
+[1.503896] (-) TimerEvent: {}
+[1.604280] (-) TimerEvent: {}
+[1.704535] (-) TimerEvent: {}
+[1.804913] (-) TimerEvent: {}
+[1.905196] (-) TimerEvent: {}
+[2.005448] (-) TimerEvent: {}
+[2.105687] (-) TimerEvent: {}
+[2.206039] (-) TimerEvent: {}
+[2.306387] (-) TimerEvent: {}
+[2.404627] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.404810] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool EngineerVisual::PointDetect::GetFlyswatter(cv::Mat&, cv::Point2f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.404845] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:159:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[KroiRect\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.404875] (cevt) StderrLine: {'line': b'  159 |     auto \x1b[01;35m\x1b[KroiRect\x1b[m\x1b[K = cv::minAreaRect(outlines[index]);\n'}
+[2.404902] (cevt) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.406546] (-) TimerEvent: {}
+[2.412152] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EngineerVisual::CameraNode::thread_main()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.412230] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:60:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Krotate\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.412266] (cevt) StderrLine: {'line': b'   60 |       auto \x1b[01;35m\x1b[Krotate\x1b[m\x1b[K = detecter.Rotate();\n'}
+[2.412294] (cevt) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.506751] (-) TimerEvent: {}
+[2.607109] (-) TimerEvent: {}
+[2.707499] (-) TimerEvent: {}
+[2.807876] (-) TimerEvent: {}
+[2.908254] (-) TimerEvent: {}
+[3.008617] (-) TimerEvent: {}
+[3.108990] (-) TimerEvent: {}
+[3.209332] (-) TimerEvent: {}
+[3.309666] (-) TimerEvent: {}
+[3.410007] (-) TimerEvent: {}
+[3.510342] (-) TimerEvent: {}
+[3.610676] (-) TimerEvent: {}
+[3.711017] (-) TimerEvent: {}
+[3.811355] (-) TimerEvent: {}
+[3.892564] (cevt) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable cevt\x1b[0m\n'}
+[3.911541] (-) TimerEvent: {}
+[4.011904] (-) TimerEvent: {}
+[4.112326] (-) TimerEvent: {}
+[4.200349] (cevt) StdoutLine: {'line': b'[100%] Built target cevt\n'}
+[4.212431] (-) TimerEvent: {}
+[4.213408] (cevt) CommandEnded: {'returncode': 0}
+[4.232161] (cevt) JobProgress: {'identifier': 'cevt', 'progress': 'install'}
+[4.232234] (cevt) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/CEVT/src/build/cevt'], 'cwd': '/workspaces/CEVT/src/build/cevt', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/cevt'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[4.237443] (cevt) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.237524] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include\n'}
+[4.237565] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/filter\n'}
+[4.237593] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/filter/ekf.hpp\n'}
+[4.237621] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/pnp\n'}
+[4.237648] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/pnp/pnp_solver.hpp\n'}
+[4.237674] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/util\n'}
+[4.237700] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/util/fps_counter.hpp\n'}
+[4.237866] (cevt) StdoutLine: {'line': b'-- Installing: /workspaces/CEVT/src/install/lib/cevt/cevt\n'}
+[4.238742] (cevt) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/CEVT/src/install/lib/cevt/cevt" to ""\n'}
+[4.238818] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/package_run_dependencies/cevt\n'}
+[4.238857] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/parent_prefix_path/cevt\n'}
+[4.239006] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/environment/ament_prefix_path.sh\n'}
+[4.239088] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/environment/ament_prefix_path.dsv\n'}
+[4.239134] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/environment/path.sh\n'}
+[4.239173] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/environment/path.dsv\n'}
+[4.239207] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/local_setup.bash\n'}
+[4.239248] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/local_setup.sh\n'}
+[4.239287] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/local_setup.zsh\n'}
+[4.239328] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/local_setup.dsv\n'}
+[4.239366] (cevt) StdoutLine: {'line': b'-- Installing: /workspaces/CEVT/src/install/share/cevt/package.dsv\n'}
+[4.239395] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/packages/cevt\n'}
+[4.239427] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.239457] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.239508] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/cmake/cevtConfig.cmake\n'}
+[4.239588] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/cmake/cevtConfig-version.cmake\n'}
+[4.239867] (cevt) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/cevt/package.xml\n'}
+[4.240155] (cevt) CommandEnded: {'returncode': 0}
+[4.298061] (cevt) JobEnded: {'identifier': 'cevt', 'rc': 0}
+[4.298635] (-) EventReactorShutdown: {}

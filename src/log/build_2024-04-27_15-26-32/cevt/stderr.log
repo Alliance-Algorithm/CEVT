@@ -1,0 +1,19 @@
+In file included from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19[m[K:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:[m[K In member function ‘[01m[Kbool EngineerVisual::PointDetect::GetR(cv::Mat&, cv::Point2d&, float&)[m[K’:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:103:54:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kcv::Point2f&[m[K’ {aka ‘[01m[Kcv::Point_<float>&[m[K’} to an rvalue of type ‘[01m[Kcv::Point_<float>[m[K’
+  103 |     cv::minEnclosingCircle(cv::Mat(outlines[index]), [01;31m[Kcenter[m[K, radius);
+      |                                                      [01;31m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:52[m[K,
+                 from [01m[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11[m[K,
+                 from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/types.hpp:1214:1:[m[K [01;36m[Knote: [m[K  after user-defined conversion: ‘[01m[Kcv::Point_<_Tp>::operator cv::Point_<_Tp2>() const [with _Tp2 = float; _Tp = double][m[K’
+ 1214 | [01;36m[KPoint_<_Tp>[m[K::operator Point_<_Tp2>() const
+      | [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:24[m[K,
+                 from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19[m[K:
+[01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4025:55:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid cv::minEnclosingCircle(cv::InputArray, cv::Point2f&, float&)[m[K’
+ 4025 |                                       CV_OUT [01;36m[KPoint2f& center[m[K, CV_OUT float& radius );
+      |                                              [01;36m[K~~~~~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/cevt.dir/build.make:76: CMakeFiles/cevt.dir/src/cevt.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cevt.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,540 @@
+[0.000000] (-) TimerEvent: {}
+[0.000102] (hikcamera) JobQueued: {'identifier': 'hikcamera', 'dependencies': OrderedDict()}
+[0.000148] (cevt) JobQueued: {'identifier': 'cevt', 'dependencies': OrderedDict([('hikcamera', '/workspaces/CEVT/src/install')])}
+[0.000187] (hikcamera) JobStarted: {'identifier': 'hikcamera'}
+[0.019500] (hikcamera) JobProgress: {'identifier': 'hikcamera', 'progress': 'cmake'}
+[0.019821] (hikcamera) JobProgress: {'identifier': 'hikcamera', 'progress': 'build'}
+[0.020173] (hikcamera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/CEVT/src/build/hikcamera', '--', '-j20', '-l20'], 'cwd': '/workspaces/CEVT/src/build/hikcamera', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/hikcamera'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[0.051370] (hikcamera) StdoutLine: {'line': b'[100%] Built target hikcamera\n'}
+[0.059117] (hikcamera) CommandEnded: {'returncode': 0}
+[0.076585] (hikcamera) JobProgress: {'identifier': 'hikcamera', 'progress': 'install'}
+[0.082518] (hikcamera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/CEVT/src/build/hikcamera'], 'cwd': '/workspaces/CEVT/src/build/hikcamera', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/hikcamera'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[0.086750] (hikcamera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.086932] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib\n'}
+[0.086980] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvUsb3vTL.so.4.3.0.3\n'}
+[0.087011] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvProducerU3V.cti\n'}
+[0.087046] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLAllSerial_gcc447_v3_0.so\n'}
+[0.087095] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVGigEVisionSDK.so.4.3.0.3\n'}
+[0.087128] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVGigEVisionSDK.so\n'}
+[0.087178] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libGenCP_gcc447_v3_0.so\n'}
+[0.087220] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLProtocol_gcc447_v3_0.so\n'}
+[0.087249] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVRender.so\n'}
+[0.087276] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libFormatConversion.so\n'}
+[0.087308] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControlWrapper.so\n'}
+[0.087339] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerGEV.cti\n'}
+[0.087369] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerCML.cti\n'}
+[0.087400] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvProducerGEV.cti\n'}
+[0.087428] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerXoF.cti\n'}
+[0.087456] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libLog_gcc447_v3_0.so\n'}
+[0.087509] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/liblog4cpp_gcc447_v3_0.so\n'}
+[0.087542] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libswscale.so\n'}
+[0.087572] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControlWrapper.so.4.3.0.3\n'}
+[0.087598] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCamLVision.so\n'}
+[0.087628] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControl.so\n'}
+[0.087686] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMediaProcess.so\n'}
+[0.087714] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMVFGControl.so\n'}
+[0.087740] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLSerHvc.so\n'}
+[0.087766] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/MvFGProducerCXP.cti\n'}
+[0.087793] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCameraControl.so.4.3.0.4\n'}
+[0.087824] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libavutil.so\n'}
+[0.087847] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvCamLVision.so.4.3.0.3\n'}
+[0.087870] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libGCBase_gcc447_v3_0.so\n'}
+[0.087894] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libCLSerCOM.so\n'}
+[0.087916] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libMvUsb3vTL.so\n'}
+[0.087942] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include\n'}
+[0.087967] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/hikcamera\n'}
+[0.087993] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp\n'}
+[0.088018] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/library_path.sh\n'}
+[0.088066] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/library_path.dsv\n'}
+[0.088134] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/lib/libhikcamera.so\n'}
+[0.088164] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/package_run_dependencies/hikcamera\n'}
+[0.088192] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/parent_prefix_path/hikcamera\n'}
+[0.088221] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/ament_prefix_path.sh\n'}
+[0.088249] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/ament_prefix_path.dsv\n'}
+[0.088277] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/path.sh\n'}
+[0.088311] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/environment/path.dsv\n'}
+[0.088340] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.bash\n'}
+[0.088367] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.sh\n'}
+[0.088395] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.zsh\n'}
+[0.088423] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/local_setup.dsv\n'}
+[0.088450] (hikcamera) StdoutLine: {'line': b'-- Installing: /workspaces/CEVT/src/install/share/hikcamera/package.dsv\n'}
+[0.088523] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/ament_index/resource_index/packages/hikcamera\n'}
+[0.088553] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.088583] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.088618] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.088646] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/hikcameraConfig.cmake\n'}
+[0.089948] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/cmake/hikcameraConfig-version.cmake\n'}
+[0.089997] (hikcamera) StdoutLine: {'line': b'-- Up-to-date: /workspaces/CEVT/src/install/share/hikcamera/package.xml\n'}
+[0.090542] (hikcamera) CommandEnded: {'returncode': 0}
+[0.099921] (-) TimerEvent: {}
+[0.148220] (hikcamera) JobEnded: {'identifier': 'hikcamera', 'rc': 0}
+[0.148753] (cevt) JobStarted: {'identifier': 'cevt'}
+[0.167658] (cevt) JobProgress: {'identifier': 'cevt', 'progress': 'cmake'}
+[0.167937] (cevt) JobProgress: {'identifier': 'cevt', 'progress': 'build'}
+[0.168065] (cevt) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/CEVT/src/build/cevt', '--', '-j20', '-l20'], 'cwd': '/workspaces/CEVT/src/build/cevt', 'env': OrderedDict([('USER', 'developer'), ('HOSTNAME', 'f33522372499'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/CEVT/src/install/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/CEVT'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-b841daa4-41c6-4ef3-8f87-d426bdcd4ff0.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('PAGER', 'more'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/workspaces/CEVT/src/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-cda8230a41.sock'), ('AMENT_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-56825903-fb8a-4684-b807-7e7ed96625a9.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('WORKDIR', '/home/developer'), ('SHELL', '/bin/zsh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/CEVT/src/build/cevt'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/CEVT/src/install:/opt/ros/humble')]), 'shell': False}
+[0.193948] (cevt) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cevt\x1b[0m\n'}
+[0.200001] (-) TimerEvent: {}
+[0.207375] (cevt) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/cevt.dir/src/cevt.cpp.o\x1b[0m\n'}
+[0.300117] (-) TimerEvent: {}
+[0.400490] (-) TimerEvent: {}
+[0.500859] (-) TimerEvent: {}
+[0.601154] (-) TimerEvent: {}
+[0.701508] (-) TimerEvent: {}
+[0.801856] (-) TimerEvent: {}
+[0.902245] (-) TimerEvent: {}
+[1.002590] (-) TimerEvent: {}
+[1.102940] (-) TimerEvent: {}
+[1.203323] (-) TimerEvent: {}
+[1.303706] (-) TimerEvent: {}
+[1.404082] (-) TimerEvent: {}
+[1.504459] (-) TimerEvent: {}
+[1.604798] (-) TimerEvent: {}
+[1.705189] (-) TimerEvent: {}
+[1.805566] (-) TimerEvent: {}
+[1.905959] (-) TimerEvent: {}
+[2.006374] (-) TimerEvent: {}
+[2.106757] (-) TimerEvent: {}
+[2.207125] (-) TimerEvent: {}
+[2.307515] (-) TimerEvent: {}
+[2.407928] (-) TimerEvent: {}
+[2.439360] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.439522] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EngineerVisual::PointDetect::Processing(cv::Mat&, cv::Point2f, cv::RotatedRect)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.439559] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:272:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2d [4]\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<double> [4]\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>*\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.439589] (cevt) StderrLine: {'line': b'  272 |     head.points(\x1b[01;31m\x1b[Kbox\x1b[m\x1b[K);\n'}
+[2.439616] (cevt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.439641] (cevt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[2.439665] (cevt) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[Kcv::Point2d [4] {aka cv::Point_<double> [4]}\x1b[m\x1b[K\n'}
+[2.439690] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.439715] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.439740] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.439764] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:540:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::RotatedRect::points(cv::Point2f*) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.439790] (cevt) StderrLine: {'line': b'  540 |     void points(\x1b[01;36m\x1b[KPoint2f pts[]\x1b[m\x1b[K) const;\n'}
+[2.439822] (cevt) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[2.440123] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.440213] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<double>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.440250] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(\x1b[32m\x1b[KrCenter\x1b[m\x1b[K \x1b[01;31m\x1b[K-\x1b[m\x1b[K \x1b[34m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.440322] (cevt) StderrLine: {'line': b'      |                           \x1b[32m\x1b[K~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^\x1b[m\x1b[K \x1b[34m\x1b[K~\x1b[m\x1b[K\n'}
+[2.440350] (cevt) StderrLine: {'line': b'      |                           \x1b[32m\x1b[K|\x1b[m\x1b[K         \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[2.440377] (cevt) StderrLine: {'line': b'      |                           \x1b[32m\x1b[K|\x1b[m\x1b[K         \x1b[34m\x1b[KPoint_<double>\x1b[m\x1b[K\n'}
+[2.440403] (cevt) StderrLine: {'line': b'      |                           \x1b[32m\x1b[KPoint_<float>\x1b[m\x1b[K\n'}
+[2.440430] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[2.440455] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:61\x1b[m\x1b[K,\n'}
+[2.440481] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp:8\x1b[m\x1b[K,\n'}
+[2.440507] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:2\x1b[m\x1b[K:\n'}
+[2.440533] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:577:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.440562] (cevt) StderrLine: {'line': b'  577 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[2.440587] (cevt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.440719] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:577:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.440752] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.440781] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.440810] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.440836] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.440948] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[2.440976] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:61\x1b[m\x1b[K,\n'}
+[2.441001] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp:8\x1b[m\x1b[K,\n'}
+[2.441028] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:2\x1b[m\x1b[K:\n'}
+[2.441053] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.441248] (cevt) StderrLine: {'line': b' 1693 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[2.441276] (cevt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.441674] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1693:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.441714] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.441746] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.441777] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.441805] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.441833] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[2.441861] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.441888] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:7\x1b[m\x1b[K:\n'}
+[2.441915] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:362:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.441943] (cevt) StderrLine: {'line': b'  362 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const complex<_Tp>& __x, const complex<_Tp>& __y)\n'}
+[2.441971] (cevt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.441997] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:362:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.442023] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.442049] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.442076] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.442101] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.442128] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[2.442153] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.442178] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:7\x1b[m\x1b[K:\n'}
+[2.442204] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:371:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.442230] (cevt) StderrLine: {'line': b'  371 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const complex<_Tp>& __x, const _Tp& __y)\n'}
+[2.442256] (cevt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.442282] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:371:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.442307] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.442417] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.442446] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.442473] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.442500] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[2.442526] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.442552] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:7\x1b[m\x1b[K:\n'}
+[2.442640] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:380:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const _Tp&, const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.442666] (cevt) StderrLine: {'line': b'  380 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const _Tp& __x, const complex<_Tp>& __y)\n'}
+[2.442690] (cevt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.442713] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:380:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.442738] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.442763] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.442789] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.442815] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.442839] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:50\x1b[m\x1b[K,\n'}
+[2.442864] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.442889] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:7\x1b[m\x1b[K:\n'}
+[2.442912] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:457:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.442936] (cevt) StderrLine: {'line': b'  457 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const complex<_Tp>& __x)\n'}
+[2.442958] (cevt) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.442981] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/complex:457:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.443004] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.443026] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.443053] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.443076] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.443099] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:51\x1b[m\x1b[K,\n'}
+[2.443122] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.443145] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.443168] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1216:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator-(const cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.443191] (cevt) StderrLine: {'line': b' 1216 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Matx<_Tp, m, n>& a, const Matx<_Tp, m, n>& b)\n'}
+[2.443215] (cevt) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.443237] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1216:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.443261] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.443283] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.443306] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.443328] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.443352] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:51\x1b[m\x1b[K,\n'}
+[2.443374] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.443399] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.443421] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1310:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Matx<_Tp, m, n> cv::operator-(const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.443445] (cevt) StderrLine: {'line': b' 1310 | Matx<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Matx<_Tp, m, n>& a)\n'}
+[2.443468] (cevt) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.443494] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1310:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.443517] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.443540] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.443563] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.443587] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.443610] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:51\x1b[m\x1b[K,\n'}
+[2.443633] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.443656] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.443678] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1372:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator-(const cv::Vec<_Tp, m>&, const cv::Vec<_Tp, m>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.443701] (cevt) StderrLine: {'line': b' 1372 | Vec<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Vec<_Tp, cn>& a, const Vec<_Tp, cn>& b)\n'}
+[2.443817] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.443841] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1372:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.443865] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.443888] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<_Tp, m>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.443912] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.443934] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.443956] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:51\x1b[m\x1b[K,\n'}
+[2.443979] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.444002] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.444024] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1483:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int cn> cv::Vec<_Tp, m> cv::operator-(const cv::Vec<_Tp, m>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.444047] (cevt) StderrLine: {'line': b' 1483 | Vec<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Vec<_Tp, cn>& a)\n'}
+[2.444070] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.444092] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1483:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.444116] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.444138] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<_Tp, m>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.444161] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.444184] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.444208] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.444231] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.444254] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.444276] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1054:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&, const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.444299] (cevt) StderrLine: {'line': b' 1054 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Complex<_Tp>& a, const Complex<_Tp>& b)\n'}
+[2.444322] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.444345] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1054:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.444369] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.444392] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.444417] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.444439] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.444462] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.444485] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.444509] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.444532] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1067:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.444556] (cevt) StderrLine: {'line': b' 1067 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Complex<_Tp>& a)\n'}
+[2.444579] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.444609] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1067:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.444635] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.444661] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.444687] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.444712] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.444737] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.444762] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.444784] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.444807] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1097:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator-(const cv::Complex<_Tp>&, _Tp)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.444829] (cevt) StderrLine: {'line': b' 1097 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Complex<_Tp>& a, _Tp b)\n'}
+[2.444851] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.444873] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1097:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.444896] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.444917] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.444940] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.444961] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.444985] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.445007] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.445028] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.445049] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1107:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp> cv::operator-(_Tp, const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.445071] (cevt) StderrLine: {'line': b' 1107 | Complex<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (_Tp b, const Complex<_Tp>& a)\n'}
+[2.445093] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.445115] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1107:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.445138] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.445159] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.445182] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.445204] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.445226] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.445247] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.445270] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.445292] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1339:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator-(const cv::Point_<_Tp>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.445314] (cevt) StderrLine: {'line': b' 1339 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Point_<_Tp>& a, const Point_<_Tp>& b)\n'}
+[2.445337] (cevt) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.445359] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1339:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.445381] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.445404] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.445427] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.445450] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.445472] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.445493] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.445515] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.445536] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1345:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp> cv::operator-(const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.445561] (cevt) StderrLine: {'line': b' 1345 | Point_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Point_<_Tp>& a)\n'}
+[2.445583] (cevt) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.445606] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1345:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.445628] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.445650] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[2.445672] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.445695] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.445717] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.445738] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.445760] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.445782] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1608:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator-(const cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.445806] (cevt) StderrLine: {'line': b' 1608 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Point3_<_Tp>& a, const Point3_<_Tp>& b)\n'}
+[2.445828] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.445849] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1608:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.445871] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.445893] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point3_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.445916] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.445937] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.445959] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.445981] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.446004] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.446026] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1614:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp> cv::operator-(const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.446049] (cevt) StderrLine: {'line': b' 1614 | Point3_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Point3_<_Tp>& a)\n'}
+[2.446071] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.446092] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1614:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.446113] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.446135] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point3_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.446157] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.446178] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.446200] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.446221] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.446243] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.446265] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1815:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Size_<_Tp> cv::operator-(const cv::Size_<_Tp>&, const cv::Size_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.446287] (cevt) StderrLine: {'line': b' 1815 | Size_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Size_<_Tp>& a, const Size_<_Tp>& b)\n'}
+[2.446311] (cevt) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.446333] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1815:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.446354] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.446376] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Size_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.446399] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.446421] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.446444] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.446466] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.446488] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.446509] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2018:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Rect_<_Tp> cv::operator-(const cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.446531] (cevt) StderrLine: {'line': b' 2018 | Rect_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Rect_<_Tp>& a, const Point_<_Tp>& b)\n'}
+[2.446553] (cevt) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.446575] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2018:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.446596] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.446618] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Rect_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.446641] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.446663] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.446684] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.446706] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.446728] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.446749] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2030:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Rect_<_Tp> cv::operator-(const cv::Rect_<_Tp>&, const cv::Size_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.446773] (cevt) StderrLine: {'line': b' 2030 | Rect_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Rect_<_Tp>& a, const Size_<_Tp>& b)\n'}
+[2.446795] (cevt) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.446817] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2030:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.446839] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.446861] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Rect_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.446883] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.446904] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.446927] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.446950] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.446972] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.446994] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2325:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator-(const cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.447017] (cevt) StderrLine: {'line': b' 2325 | Scalar_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Scalar_<_Tp>& a, const Scalar_<_Tp>& b)\n'}
+[2.447038] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.447060] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2325:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.447083] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.447105] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Scalar_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.447128] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.447150] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.447171] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.447193] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.447214] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.447236] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2349:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Scalar_<_Tp> cv::operator-(const cv::Scalar_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.447260] (cevt) StderrLine: {'line': b' 2349 | Scalar_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Scalar_<_Tp>& a)\n'}
+[2.447284] (cevt) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.447307] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2349:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.447331] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.447353] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Scalar_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.447377] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.447400] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.447422] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.447444] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.447466] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3619:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator-(const cv::Mat&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.447488] (cevt) StderrLine: {'line': b' 3619 | MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Mat& a, const Matx<_Tp, m, n>& b) { return a - Mat(b); }\n'}
+[2.447510] (cevt) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.447532] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3619:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.447554] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.447576] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.447598] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.447620] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.447642] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.447664] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.447686] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3621:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::MatExpr cv::operator-(const cv::Matx<_Tp, m, n>&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.447709] (cevt) StderrLine: {'line': b' 3621 | MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Matx<_Tp, m, n>& a, const Mat& b) { return Mat(a) - b; }\n'}
+[2.447730] (cevt) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.447752] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3621:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.447774] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.447796] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.447820] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.447843] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.447864] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.447886] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.447908] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.447930] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2601:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::MatConstIterator_<_Tp> cv::operator-(const cv::MatConstIterator_<_Tp>&, ptrdiff_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.447952] (cevt) StderrLine: {'line': b' 2601 | MatConstIterator_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const MatConstIterator_<_Tp>& a, ptrdiff_t ofs)\n'}
+[2.447974] (cevt) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.447995] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2601:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.448018] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.448039] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatConstIterator_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.448063] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.448086] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.448108] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.448131] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.448152] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.448174] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2738:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::MatIterator_<_Tp> cv::operator-(const cv::MatIterator_<_Tp>&, ptrdiff_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.448197] (cevt) StderrLine: {'line': b' 2738 | MatIterator_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const MatIterator_<_Tp>& a, ptrdiff_t ofs)\n'}
+[2.448218] (cevt) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.448240] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2738:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.448262] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.448286] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatIterator_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.448310] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.448331] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.448354] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/quaternion.hpp:1694\x1b[m\x1b[K,\n'}
+[2.448377] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:22\x1b[m\x1b[K,\n'}
+[2.448398] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.448420] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/quaternion.inl.hpp:164:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> cv::Quat<_Tp> cv::operator-(T, const cv::Quat<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.448442] (cevt) StderrLine: {'line': b'  164 | inline Quat<T> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const T a, const Quat<T>& q)\n'}
+[2.448464] (cevt) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.448485] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/quaternion.inl.hpp:164:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.448508] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.448530] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<double>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Quat<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.448552] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.448574] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.448595] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/quaternion.hpp:1694\x1b[m\x1b[K,\n'}
+[2.448620] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:22\x1b[m\x1b[K,\n'}
+[2.448644] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.448668] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/quaternion.inl.hpp:170:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> cv::Quat<_Tp> cv::operator-(const cv::Quat<_Tp>&, T)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.448692] (cevt) StderrLine: {'line': b'  170 | inline Quat<T> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const Quat<T>& q, const T a)\n'}
+[2.448716] (cevt) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.448742] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/quaternion.inl.hpp:170:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.448767] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.448790] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:279:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Quat<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.448814] (cevt) StderrLine: {'line': b'  279 |         if ((d - h).cross(rCenter - \x1b[01;36m\x1b[Kh\x1b[m\x1b[K) < 0)\n'}
+[2.448838] (cevt) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.448861] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:52\x1b[m\x1b[K,\n'}
+[2.448882] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.448903] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.448925] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2158:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Range cv::operator-(const cv::Range&, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.448950] (cevt) StderrLine: {'line': b' 2158 | Range \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Range& r1, int delta)\n'}
+[2.448973] (cevt) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.448994] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2158:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Range&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449018] (cevt) StderrLine: {'line': b' 2158 | Range operator - (\x1b[01;36m\x1b[Kconst Range& r1\x1b[m\x1b[K, int delta)\n'}
+[2.449039] (cevt) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.449061] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.449083] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.449107] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3610:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449130] (cevt) StderrLine: {'line': b' 3610 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Mat& a, const Mat& b);\n'}
+[2.449151] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.449172] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3610:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449194] (cevt) StderrLine: {'line': b' 3610 | CV_EXPORTS MatExpr operator - (\x1b[01;36m\x1b[Kconst Mat& a\x1b[m\x1b[K, const Mat& b);\n'}
+[2.449217] (cevt) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.449239] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3611:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const cv::Mat&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449262] (cevt) StderrLine: {'line': b' 3611 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Mat& a, const Scalar& s);\n'}
+[2.449284] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.449305] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3611:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449330] (cevt) StderrLine: {'line': b' 3611 | CV_EXPORTS MatExpr operator - (\x1b[01;36m\x1b[Kconst Mat& a\x1b[m\x1b[K, const Scalar& s);\n'}
+[2.449351] (cevt) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.449373] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3612:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const Scalar&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449396] (cevt) StderrLine: {'line': b' 3612 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Scalar& s, const Mat& a);\n'}
+[2.449417] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.449439] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3612:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst Scalar&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Scalar_<double>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.449464] (cevt) StderrLine: {'line': b' 3612 | CV_EXPORTS MatExpr operator - (\x1b[01;36m\x1b[Kconst Scalar& s\x1b[m\x1b[K, const Mat& a);\n'}
+[2.449486] (cevt) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.449507] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3613:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const cv::MatExpr&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449530] (cevt) StderrLine: {'line': b' 3613 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const MatExpr& e, const Mat& m);\n'}
+[2.449551] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.449573] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3613:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatExpr&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449595] (cevt) StderrLine: {'line': b' 3613 | CV_EXPORTS MatExpr operator - (\x1b[01;36m\x1b[Kconst MatExpr& e\x1b[m\x1b[K, const Mat& m);\n'}
+[2.449617] (cevt) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.449639] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3614:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const cv::Mat&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449662] (cevt) StderrLine: {'line': b' 3614 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Mat& m, const MatExpr& e);\n'}
+[2.449683] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.449704] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3614:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449730] (cevt) StderrLine: {'line': b' 3614 | CV_EXPORTS MatExpr operator - (\x1b[01;36m\x1b[Kconst Mat& m\x1b[m\x1b[K, const MatExpr& e);\n'}
+[2.449752] (cevt) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.449774] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3615:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const cv::MatExpr&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449798] (cevt) StderrLine: {'line': b' 3615 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const MatExpr& e, const Scalar& s);\n'}
+[2.449820] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.449841] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3615:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatExpr&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449867] (cevt) StderrLine: {'line': b' 3615 | CV_EXPORTS MatExpr operator - (\x1b[01;36m\x1b[Kconst MatExpr& e\x1b[m\x1b[K, const Scalar& s);\n'}
+[2.449889] (cevt) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.449910] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3616:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const Scalar&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.449932] (cevt) StderrLine: {'line': b' 3616 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Scalar& s, const MatExpr& e);\n'}
+[2.449954] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.449975] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3616:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst Scalar&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Scalar_<double>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.449998] (cevt) StderrLine: {'line': b' 3616 | CV_EXPORTS MatExpr operator - (\x1b[01;36m\x1b[Kconst Scalar& s\x1b[m\x1b[K, const MatExpr& e);\n'}
+[2.450020] (cevt) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.450042] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3617:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const cv::MatExpr&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450064] (cevt) StderrLine: {'line': b' 3617 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const MatExpr& e1, const MatExpr& e2);\n'}
+[2.450086] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.450107] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3617:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatExpr&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450129] (cevt) StderrLine: {'line': b' 3617 | CV_EXPORTS MatExpr operator - (\x1b[01;36m\x1b[Kconst MatExpr& e1\x1b[m\x1b[K, const MatExpr& e2);\n'}
+[2.450151] (cevt) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[2.450174] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3623:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450196] (cevt) StderrLine: {'line': b' 3623 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const Mat& m);\n'}
+[2.450218] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.450240] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3623:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[2.450262] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3624:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatExpr cv::operator-(const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450284] (cevt) StderrLine: {'line': b' 3624 | CV_EXPORTS MatExpr \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const MatExpr& e);\n'}
+[2.450305] (cevt) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.450327] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3624:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[2.450349] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[2.450372] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/install/include/hikcamera/image_capturer.hpp:11\x1b[m\x1b[K,\n'}
+[2.450394] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:9\x1b[m\x1b[K:\n'}
+[2.450415] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2428:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t cv::operator-(const cv::MatConstIterator&, const cv::MatConstIterator&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450437] (cevt) StderrLine: {'line': b' 2428 | ptrdiff_t \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const MatConstIterator& b, const MatConstIterator& a)\n'}
+[2.450459] (cevt) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.450481] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2428:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatConstIterator&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450508] (cevt) StderrLine: {'line': b' 2428 | ptrdiff_t operator - (\x1b[01;36m\x1b[Kconst MatConstIterator& b\x1b[m\x1b[K, const MatConstIterator& a)\n'}
+[2.450531] (cevt) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.450552] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2453:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::MatConstIterator cv::operator-(const cv::MatConstIterator&, ptrdiff_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450574] (cevt) StderrLine: {'line': b' 2453 | MatConstIterator \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const MatConstIterator& a, ptrdiff_t ofs)\n'}
+[2.450595] (cevt) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.450617] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:2453:54:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::MatConstIterator&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450639] (cevt) StderrLine: {'line': b' 2453 | MatConstIterator operator - (\x1b[01;36m\x1b[Kconst MatConstIterator& a\x1b[m\x1b[K, ptrdiff_t ofs)\n'}
+[2.450661] (cevt) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[2.450682] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[2.450705] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:16\x1b[m\x1b[K,\n'}
+[2.450726] (cevt) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.450747] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1335:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t cv::operator-(const cv::FileNodeIterator&, const cv::FileNodeIterator&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450769] (cevt) StderrLine: {'line': b' 1335 | ptrdiff_t \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K - (const FileNodeIterator& it1, const FileNodeIterator& it2)\n'}
+[2.450791] (cevt) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.450812] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1335:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::FileNodeIterator&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.450836] (cevt) StderrLine: {'line': b' 1335 | ptrdiff_t operator - (\x1b[01;36m\x1b[Kconst FileNodeIterator& it1\x1b[m\x1b[K, const FileNodeIterator& it2)\n'}
+[2.450859] (cevt) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[2.450882] (cevt) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19\x1b[m\x1b[K:\n'}
+[2.450904] (cevt) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:237:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksign\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.450928] (cevt) StderrLine: {'line': b'  237 |     int \x1b[01;35m\x1b[Ksign\x1b[m\x1b[K;\n'}
+[2.450950] (cevt) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.484921] (cevt) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cevt.dir/build.make:76: CMakeFiles/cevt.dir/src/cevt.cpp.o] Interrupt\n'}
+[2.485163] (cevt) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cevt.dir/all] Interrupt\n'}
+[2.485334] (cevt) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[2.500968] (cevt) CommandEnded: {'returncode': -2}
+[2.508041] (-) TimerEvent: {}
+[2.543222] (cevt) JobEnded: {'identifier': 'cevt', 'rc': 'SIGINT'}
+[2.553703] (-) EventReactorShutdown: {}

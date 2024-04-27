@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target cevt[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/cevt.dir/src/cevt.cpp.o[0m
+In file included from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19[m[K:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:[m[K In member function ‘[01m[Kvoid EngineerVisual::PointDetect::Calculate(cv::Mat&)[m[K’:
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:63:23:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEngineerVisual::PointDetect::GetFlyswatter(cv::Mat&, cv::Point2f&)[m[K’
+   63 |     if (![01;31m[KGetFlyswatter(image, rCenter)[m[K) {
+      |          [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:126:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool EngineerVisual::PointDetect::GetFlyswatter(cv::Mat&, cv::Mat&, cv::Point2f&)[m[K’
+  126 |   bool [01;36m[KGetFlyswatter[m[K(cv::Mat &image, cv::Mat &roi, cv::Point2f &rCenter) {
+      |        [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:126:8:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+gmake[2]: *** [CMakeFiles/cevt.dir/build.make:76: CMakeFiles/cevt.dir/src/cevt.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cevt.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

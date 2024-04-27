@@ -1,0 +1,16 @@
+[0.020s] Invoking command in '/workspaces/CEVT/src/build/cevt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target cevt[0m
+[0.059s] [ 33%] [32mBuilding CXX object CMakeFiles/cevt.dir/src/cevt.cpp.o[0m
+[2.325s] In file included from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:19[m[K:
+[2.325s] [01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:[m[K In member function ‘[01m[Kvoid EngineerVisual::PointDetect::Calculate(cv::Mat&)[m[K’:
+[2.325s] [01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:71:15:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEngineerVisual::PointDetect::Processing(cv::Mat&)[m[K’
+[2.325s]    71 |     [01;31m[KProcessing(roi)[m[K;
+[2.325s]       |     [01;31m[K~~~~~~~~~~^~~~~[m[K
+[2.325s] [01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:212:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid EngineerVisual::PointDetect::Processing(cv::Mat&, cv::Point2f)[m[K’
+[2.325s]   212 |   void [01;36m[KProcessing[m[K(cv::Mat &image, cv::Point2f rRadius) {
+[2.325s]       |        [01;36m[K^~~~~~~~~~[m[K
+[2.325s] [01m[K/workspaces/CEVT/src/cevt/src/point_detect.hpp:212:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[3.068s] gmake[2]: *** [CMakeFiles/cevt.dir/build.make:76: CMakeFiles/cevt.dir/src/cevt.cpp.o] Error 1
+[3.068s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cevt.dir/all] Error 2
+[3.068s] gmake: *** [Makefile:146: all] Error 2
+[3.070s] Invoked command in '/workspaces/CEVT/src/build/cevt' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20

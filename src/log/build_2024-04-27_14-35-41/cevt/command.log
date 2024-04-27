@@ -1,0 +1,4 @@
+Invoking command in '/workspaces/CEVT/src/build/cevt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
+Invoked command in '/workspaces/CEVT/src/build/cevt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
+Invoking command in '/workspaces/CEVT/src/build/cevt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/CEVT/src/build/cevt
+Invoked command in '/workspaces/CEVT/src/build/cevt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/CEVT/src/build/cevt

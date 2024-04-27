@@ -1,0 +1,234 @@
+[0.344s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install']
+[0.344s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7cd711e2a140>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7cd711e291b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7cd711e291b0>>, mixin_verb=('build',))
+[0.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.361s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.361s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.362s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/CEVT/src'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extension 'ignore_ament_install'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extension 'ros'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extensions ['cmake', 'python']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extension 'cmake'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extension 'python'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extensions ['python_setup_py']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvFGSdkLog) by extension 'python_setup_py'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extension 'ignore_ament_install'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extension 'ros'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extensions ['cmake', 'python']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extension 'cmake'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extension 'python'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extensions ['python_setup_py']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(MvSdkLog) by extension 'python_setup_py'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(cevt) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(cevt) by extension 'ignore'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(cevt) by extension 'ignore_ament_install'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(cevt) by extensions ['colcon_pkg']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(cevt) by extension 'colcon_pkg'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(cevt) by extensions ['colcon_meta']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(cevt) by extension 'colcon_meta'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(cevt) by extensions ['ros']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(cevt) by extension 'ros'
+[0.370s] DEBUG:colcon.colcon_core.package_identification:Package 'cevt' with type 'ros.ament_cmake' and name 'cevt'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-hikcamera) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-hikcamera) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-hikcamera) by extension 'ignore_ament_install'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-hikcamera) by extensions ['colcon_pkg']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-hikcamera) by extension 'colcon_pkg'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-hikcamera) by extensions ['colcon_meta']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-hikcamera) by extension 'colcon_meta'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-hikcamera) by extensions ['ros']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-hikcamera) by extension 'ros'
+[0.371s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2-hikcamera' with type 'ros.ament_cmake' and name 'hikcamera'
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'hikcamera' build argument 'cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'hikcamera' build argument 'cmake_target' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'hikcamera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'hikcamera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'hikcamera' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'hikcamera' build argument 'cmake_force_configure' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'hikcamera' build argument 'ament_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'hikcamera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'hikcamera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.395s] DEBUG:colcon.colcon_core.verb:Building package 'hikcamera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/CEVT/src/build/hikcamera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/CEVT/src/install', 'merge_install': True, 'path': '/workspaces/CEVT/src/ros2-hikcamera', 'symlink_install': False, 'test_result_base': None}
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'cevt' build argument 'cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'cevt' build argument 'cmake_target' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'cevt' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'cevt' build argument 'cmake_clean_cache' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'cevt' build argument 'cmake_clean_first' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'cevt' build argument 'cmake_force_configure' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'cevt' build argument 'ament_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'cevt' build argument 'catkin_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'cevt' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.399s] DEBUG:colcon.colcon_core.verb:Building package 'cevt' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/CEVT/src/build/cevt', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/CEVT/src/install', 'merge_install': True, 'path': '/workspaces/CEVT/src/cevt', 'symlink_install': False, 'test_result_base': None}
+[0.403s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.407s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.407s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/CEVT/src/ros2-hikcamera' with build type 'ament_cmake'
+[0.407s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/CEVT/src/ros2-hikcamera'
+[0.411s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.412s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.412s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/CEVT/src/build/hikcamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/hikcamera -- -j20 -l20
+[0.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/CEVT/src/build/hikcamera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/hikcamera -- -j20 -l20
+[0.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/CEVT/src/build/hikcamera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/CEVT/src/build/hikcamera
+[0.491s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hikcamera)
+[0.492s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/CEVT/src/build/hikcamera' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/CEVT/src/build/hikcamera
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install' for CMake module files
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install' for CMake config files
+[0.498s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikcamera', 'cmake_prefix_path')
+[0.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/hikcamera/hook/cmake_prefix_path.ps1'
+[0.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/CEVT/src/install/share/hikcamera/hook/cmake_prefix_path.dsv'
+[0.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/hikcamera/hook/cmake_prefix_path.sh'
+[0.503s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib'
+[0.503s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikcamera', 'ld_library_path_lib')
+[0.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/hikcamera/hook/ld_library_path_lib.ps1'
+[0.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/CEVT/src/install/share/hikcamera/hook/ld_library_path_lib.dsv'
+[0.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/hikcamera/hook/ld_library_path_lib.sh'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/bin'
+[0.507s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib/pkgconfig/hikcamera.pc'
+[0.508s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib/python3.10/site-packages'
+[0.509s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/bin'
+[0.512s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/hikcamera/package.ps1'
+[0.512s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/CEVT/src/install/share/hikcamera/package.dsv'
+[0.513s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/hikcamera/package.sh'
+[0.513s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/hikcamera/package.bash'
+[0.513s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/hikcamera/package.zsh'
+[0.514s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/CEVT/src/install/share/colcon-core/packages/hikcamera)
+[0.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hikcamera)
+[0.536s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install' for CMake module files
+[0.536s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install' for CMake config files
+[0.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikcamera', 'cmake_prefix_path')
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/hikcamera/hook/cmake_prefix_path.ps1'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/CEVT/src/install/share/hikcamera/hook/cmake_prefix_path.dsv'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/hikcamera/hook/cmake_prefix_path.sh'
+[0.540s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib'
+[0.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikcamera', 'ld_library_path_lib')
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/hikcamera/hook/ld_library_path_lib.ps1'
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/CEVT/src/install/share/hikcamera/hook/ld_library_path_lib.dsv'
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/hikcamera/hook/ld_library_path_lib.sh'
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/bin'
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib/pkgconfig/hikcamera.pc'
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib/python3.10/site-packages'
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/bin'
+[0.548s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/hikcamera/package.ps1'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/CEVT/src/install/share/hikcamera/package.dsv'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/hikcamera/package.sh'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/hikcamera/package.bash'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/hikcamera/package.zsh'
+[0.549s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/CEVT/src/install/share/colcon-core/packages/hikcamera)
+[0.550s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/CEVT/src/cevt' with build type 'ament_cmake'
+[0.550s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/CEVT/src/cevt'
+[0.554s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.554s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/CEVT/src/build/cevt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
+[4.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/CEVT/src/build/cevt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
+[4.817s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/CEVT/src/build/cevt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/CEVT/src/build/cevt
+[4.825s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cevt)
+[4.825s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/CEVT/src/build/cevt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/CEVT/src/build/cevt
+[4.830s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install' for CMake module files
+[4.830s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install' for CMake config files
+[4.831s] Level 1:colcon.colcon_core.shell:create_environment_hook('cevt', 'cmake_prefix_path')
+[4.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/cevt/hook/cmake_prefix_path.ps1'
+[4.835s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/CEVT/src/install/share/cevt/hook/cmake_prefix_path.dsv'
+[4.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/cevt/hook/cmake_prefix_path.sh'
+[4.836s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib'
+[4.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('cevt', 'ld_library_path_lib')
+[4.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/cevt/hook/ld_library_path_lib.ps1'
+[4.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/CEVT/src/install/share/cevt/hook/ld_library_path_lib.dsv'
+[4.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/cevt/hook/ld_library_path_lib.sh'
+[4.840s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/bin'
+[4.840s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib/pkgconfig/cevt.pc'
+[4.840s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib/python3.10/site-packages'
+[4.840s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/bin'
+[4.844s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/cevt/package.ps1'
+[4.844s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/CEVT/src/install/share/cevt/package.dsv'
+[4.844s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/cevt/package.sh'
+[4.844s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/cevt/package.bash'
+[4.845s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/cevt/package.zsh'
+[4.845s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/CEVT/src/install/share/colcon-core/packages/cevt)
+[4.864s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cevt)
+[4.869s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install' for CMake module files
+[4.869s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install' for CMake config files
+[4.869s] Level 1:colcon.colcon_core.shell:create_environment_hook('cevt', 'cmake_prefix_path')
+[4.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/cevt/hook/cmake_prefix_path.ps1'
+[4.873s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/CEVT/src/install/share/cevt/hook/cmake_prefix_path.dsv'
+[4.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/cevt/hook/cmake_prefix_path.sh'
+[4.874s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib'
+[4.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('cevt', 'ld_library_path_lib')
+[4.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/cevt/hook/ld_library_path_lib.ps1'
+[4.878s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/CEVT/src/install/share/cevt/hook/ld_library_path_lib.dsv'
+[4.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/CEVT/src/install/share/cevt/hook/ld_library_path_lib.sh'
+[4.878s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/bin'
+[4.878s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib/pkgconfig/cevt.pc'
+[4.878s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/lib/python3.10/site-packages'
+[4.879s] Level 1:colcon.colcon_core.environment:checking '/workspaces/CEVT/src/install/bin'
+[4.883s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/cevt/package.ps1'
+[4.883s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/CEVT/src/install/share/cevt/package.dsv'
+[4.883s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/cevt/package.sh'
+[4.883s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/cevt/package.bash'
+[4.883s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/CEVT/src/install/share/cevt/package.zsh'
+[4.884s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/CEVT/src/install/share/colcon-core/packages/cevt)
+[4.884s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.884s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.884s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.884s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.891s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.891s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.891s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.891s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.892s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[4.893s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.897s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/CEVT/src/install/local_setup.ps1'
+[4.897s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/CEVT/src/install/_local_setup_util_ps1.py'
+[4.898s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/CEVT/src/install/setup.ps1'
+[4.902s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/CEVT/src/install/local_setup.sh'
+[4.902s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/CEVT/src/install/_local_setup_util_sh.py'
+[4.902s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/CEVT/src/install/setup.sh'
+[4.907s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/CEVT/src/install/local_setup.bash'
+[4.907s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/CEVT/src/install/setup.bash'
+[4.911s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/CEVT/src/install/local_setup.zsh'
+[4.911s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/CEVT/src/install/setup.zsh'
