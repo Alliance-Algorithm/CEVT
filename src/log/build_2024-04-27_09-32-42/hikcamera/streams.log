@@ -1,0 +1,33 @@
+[0.010s] Invoking command in '/workspaces/CEVT/src/build/hikcamera': /usr/bin/cmake /workspaces/CEVT/src/ros2-hikcamera -DCMAKE_INSTALL_PREFIX=/workspaces/CEVT/src/install
+[0.103s] -- The C compiler identification is GNU 11.4.0
+[0.159s] -- The CXX compiler identification is GNU 11.4.0
+[0.166s] -- Detecting C compiler ABI info
+[0.215s] -- Detecting C compiler ABI info - done
+[0.220s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.220s] -- Detecting C compile features
+[0.220s] -- Detecting C compile features - done
+[0.222s] -- Detecting CXX compiler ABI info
+[0.268s] -- Detecting CXX compiler ABI info - done
+[0.272s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.272s] -- Detecting CXX compile features
+[0.272s] -- Detecting CXX compile features - done
+[0.278s] [31mCMake Error at CMakeLists.txt:8 (find_package):
+[0.278s]   By not providing "Findament_cmake_auto.cmake" in CMAKE_MODULE_PATH this
+[0.278s]   project has asked CMake to find a package configuration file provided by
+[0.278s]   "ament_cmake_auto", but CMake did not find one.
+[0.278s] 
+[0.278s]   Could not find a package configuration file provided by "ament_cmake_auto"
+[0.278s]   with any of the following names:
+[0.278s] 
+[0.278s]     ament_cmake_autoConfig.cmake
+[0.279s]     ament_cmake_auto-config.cmake
+[0.279s] 
+[0.279s]   Add the installation prefix of "ament_cmake_auto" to CMAKE_PREFIX_PATH or
+[0.279s]   set "ament_cmake_auto_DIR" to a directory containing one of the above
+[0.279s]   files.  If "ament_cmake_auto" provides a separate development package or
+[0.279s]   SDK, be sure it has been installed.
+[0.279s] 
+[0.279s] [0m
+[0.279s] -- Configuring incomplete, errors occurred!
+[0.279s] See also "/workspaces/CEVT/src/build/hikcamera/CMakeFiles/CMakeOutput.log".
+[0.280s] Invoked command in '/workspaces/CEVT/src/build/hikcamera' returned '1': /usr/bin/cmake /workspaces/CEVT/src/ros2-hikcamera -DCMAKE_INSTALL_PREFIX=/workspaces/CEVT/src/install

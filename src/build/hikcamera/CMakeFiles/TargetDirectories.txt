@@ -1,0 +1,10 @@
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/uninstall.dir
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/hikcamera_uninstall.dir
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/hikcamera.dir
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/test.dir
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/edit_cache.dir
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/rebuild_cache.dir
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/list_install_components.dir
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/install.dir
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/install/local.dir
+/workspaces/CEVT/src/build/hikcamera/CMakeFiles/install/strip.dir

@@ -1,0 +1,54 @@
+[0.017s] Invoking command in '/workspaces/CEVT/src/build/cevt': AMENT_PREFIX_PATH=/workspaces/CEVT/src/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/CEVT/src/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/CEVT/src/install/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /workspaces/CEVT/src/cevt -DCMAKE_INSTALL_PREFIX=/workspaces/CEVT/src/install
+[0.024s] -- Found ament_cmake_auto: 1.3.8 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.144s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.146s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.149s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.155s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.163s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.195s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.196s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.260s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.509s] -- Configuring done
+[0.520s] -- Generating done
+[0.521s] -- Build files have been written to: /workspaces/CEVT/src/build/cevt
+[0.526s] Invoked command in '/workspaces/CEVT/src/build/cevt' returned '0': AMENT_PREFIX_PATH=/workspaces/CEVT/src/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/CEVT/src/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/CEVT/src/install/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /workspaces/CEVT/src/cevt -DCMAKE_INSTALL_PREFIX=/workspaces/CEVT/src/install
+[0.527s] Invoking command in '/workspaces/CEVT/src/build/cevt': AMENT_PREFIX_PATH=/workspaces/CEVT/src/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/CEVT/src/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/CEVT/src/install/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
+[0.554s] [ 33%] [32mBuilding CXX object CMakeFiles/cevt.dir/src/cevt.cpp.o[0m
+[0.554s] [ 66%] [32mBuilding CXX object CMakeFiles/cevt.dir/src/pnp_solver.cpp.o[0m
+[2.890s] In file included from [01m[K/workspaces/CEVT/src/cevt/src/cevt.cpp:17[m[K:
+[2.890s] [01m[K/workspaces/CEVT/src/cevt/src/attitude_algorithm.hpp:[m[K In member function ‘[01m[Kvoid EngineerVisual::AttitudeAlgorithm::Processing(cv::Mat&)[m[K’:
+[2.890s] [01m[K/workspaces/CEVT/src/cevt/src/attitude_algorithm.hpp:169:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klast[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[2.890s]   169 |     int [01;35m[Klast[m[K = -1;
+[2.890s]       |         [01;35m[K^~~~[m[K
+[4.909s] [100%] [32m[1mLinking CXX executable cevt[0m
+[5.102s] [100%] Built target cevt
+[5.110s] Invoked command in '/workspaces/CEVT/src/build/cevt' returned '0': AMENT_PREFIX_PATH=/workspaces/CEVT/src/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/CEVT/src/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/CEVT/src/install/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /workspaces/CEVT/src/build/cevt -- -j20 -l20
+[5.125s] Invoking command in '/workspaces/CEVT/src/build/cevt': AMENT_PREFIX_PATH=/workspaces/CEVT/src/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/CEVT/src/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/CEVT/src/install/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /workspaces/CEVT/src/build/cevt
+[5.129s] -- Install configuration: ""
+[5.129s] -- Up-to-date: /workspaces/CEVT/src/install/include
+[5.129s] -- Installing: /workspaces/CEVT/src/install/include/filter
+[5.130s] -- Installing: /workspaces/CEVT/src/install/include/filter/ekf.hpp
+[5.130s] -- Installing: /workspaces/CEVT/src/install/include/pnp
+[5.130s] -- Installing: /workspaces/CEVT/src/install/include/pnp/pnp_solver.hpp
+[5.130s] -- Installing: /workspaces/CEVT/src/install/include/util
+[5.130s] -- Installing: /workspaces/CEVT/src/install/include/util/fps_counter.hpp
+[5.130s] -- Installing: /workspaces/CEVT/src/install/lib/cevt/cevt
+[5.131s] -- Set runtime path of "/workspaces/CEVT/src/install/lib/cevt/cevt" to ""
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/ament_index/resource_index/package_run_dependencies/cevt
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/ament_index/resource_index/parent_prefix_path/cevt
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/environment/ament_prefix_path.sh
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/environment/ament_prefix_path.dsv
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/environment/path.sh
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/environment/path.dsv
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/local_setup.bash
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/local_setup.sh
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/local_setup.zsh
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/local_setup.dsv
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/package.dsv
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/ament_index/resource_index/packages/cevt
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/cmake/cevtConfig.cmake
+[5.131s] -- Installing: /workspaces/CEVT/src/install/share/cevt/cmake/cevtConfig-version.cmake
+[5.132s] -- Installing: /workspaces/CEVT/src/install/share/cevt/package.xml
+[5.132s] Invoked command in '/workspaces/CEVT/src/build/cevt' returned '0': AMENT_PREFIX_PATH=/workspaces/CEVT/src/install:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/CEVT/src/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/CEVT/src/install/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /workspaces/CEVT/src/build/cevt

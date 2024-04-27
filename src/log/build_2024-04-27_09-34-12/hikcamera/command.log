@@ -1,0 +1,2 @@
+Invoking command in '/workspaces/CEVT/src/build/hikcamera': /usr/bin/cmake /workspaces/CEVT/src/ros2-hikcamera -DCMAKE_INSTALL_PREFIX=/workspaces/CEVT/src/install
+Invoked command in '/workspaces/CEVT/src/build/hikcamera' returned '1': /usr/bin/cmake /workspaces/CEVT/src/ros2-hikcamera -DCMAKE_INSTALL_PREFIX=/workspaces/CEVT/src/install
