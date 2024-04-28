@@ -32,15 +32,15 @@
 #include <vector>
 
 #include "../include/pnp/pnp_solver.hpp"
-
+#include "./buff_nocolor_v4.hpp"
+// #define SHOW_IMG
 namespace EngineerVisual {
 
 class PointDetect {
 public:
-  PointDetect() : pnpsolver() {
+  PointDetect() : pnpsolver(), buff_natual_net_() {
 
     //初始化相机参数
-
     pnpsolver.SetCameraMatrix(1.722231837421459e+03, 1.724876404292754e+03,
                               7.013056440882832e+02, 5.645821718351237e+02);
     //设置畸变参数
@@ -56,7 +56,7 @@ public:
     cv::Point2f rCenter(0, 0);
     cv::RotatedRect roiRect;
     float rRadius = 0;
-    Preprocessing(image);
+    Preprocessing(image, 130);
     if (!GetR(image, rCenter, rRadius)) {
 #ifdef SHOW_IMG
       cv::imshow("roi", image);
@@ -72,23 +72,23 @@ public:
       return;
     }
 
-    Preprocessing(roi);
+    Preprocessing(roi, 160);
     Processing(roi, rCenter, roiRect);
   }
   Eigen::Quaternionf &Rotate() { return rotate; }
   Eigen::Vector3f &Position() { return position; }
 
 private:
-  void Preprocessing(cv::Mat &image) {
+  void Preprocessing(cv::Mat &image, int thresh) {
     // 颜色过滤
     std::vector<cv::Mat> rgb;
     cv::split(image, rgb);
-    // image = rgb.at(0) - rgb.at(2);
+    image = rgb.at(2) - rgb.at(0);
     // //转成灰度图片
-    cv::cvtColor(image, image, cv::COLOR_BGR2GRAY);
+    // cv::cvtColor(image, image, cv::COLOR_BGR2GRAY);
     // #二值化
     //     ret, img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY);
-    cv::threshold(image, image, 100, 255, cv::THRESH_BINARY);
+    cv::threshold(image, image, thresh, 255, cv::THRESH_BINARY);
   };
 
   //获取R标
@@ -96,14 +96,17 @@ private:
     std::vector<std::vector<cv::Point>> outlines{};
     std::vector<cv::Vec4i> hierarchies{};
     int min = 10000, index = -1;
+    cv::Mat element = getStructuringElement(cv::MORPH_RECT, cv::Size(1, 1));
+    cv::Mat img;
+    cv::erode(image, img, element);
 
-    cv::findContours(image, outlines, hierarchies, cv::RETR_TREE,
+    cv::findContours(img, outlines, hierarchies, cv::RETR_TREE,
                      cv::CHAIN_APPROX_NONE);
 
     for (int i = 0, outlines_size = outlines.size(); i < outlines_size; i++) {
 
 #ifdef SHOW_IMG
-      cv::drawContours(image, outlines, i, cv::Scalar(100), 4);
+      cv::drawContours(img, outlines, i, cv::Scalar(100), 1);
 #endif
       double area = cv::contourArea(outlines[i]);
 
@@ -115,7 +118,7 @@ private:
       /*找有子轮廓的*/
       if (hierarchies[i][2] < 0 || hierarchies[i][2] >= outlines_size)
         continue;
-      if (min >= area) {
+      if (min > area) {
         min = area;
         index = i;
       }
@@ -126,23 +129,22 @@ private:
       return false;
     }
     cv::minEnclosingCircle(cv::Mat(outlines[index]), center, radius);
-    // cv::circle(image, center, radius, cv::Scalar(200), -1, 8, 0);
 #ifdef SHOW_IMG
-    cv::circle(original, center, radius, cv::Scalar(200), -1, 8, 0);
+    cv::circle(img, center, radius, cv::Scalar(200), -1, 8, 0);
+    // cv::circle(original, center, radius, cv::Scalar(200), -1, 8, 0);
+    cv::imshow("R Pos", img);
 #endif
-    // cv::imshow("R Pos", image);
-    // cv::waitKey(10);
     return true;
   }
 
   //获取苍蝇拍子
   bool GetFlyswatter(cv::Mat &image, cv::Mat &roi, cv::Point2f &rCenter,
                      cv::RotatedRect &roiRect) {
-    cv::Mat element = getStructuringElement(0, cv::Size(5, 5));
-    cv::Mat dilateMat = cv::Mat(image);
+    cv::Mat element = getStructuringElement(0, cv::Size(4, 4));
+    cv::Mat dilateMat;
 
     // cv::morphologyEx(image, dilateMat, cv::MORPH_CLOSE, element);
-    // cv::dilate(image, dilateMat, element, cv::Point(-1, -1), 2);
+    cv::dilate(image, dilateMat, element);
 
     std::vector<std::vector<cv::Point>> outlines{};
     std::vector<cv::Vec4i> hierarchies{};
@@ -162,7 +164,7 @@ private:
       /*找没子轮廓的*/
       if (hierarchies[i][2] >= 0 && hierarchies[i][2] < outlines_size) {
         double area2 = cv::contourArea(outlines[hierarchies[i][2]]);
-        if (outlines[hierarchies[i][2]].size() > 2 && area2 < 1000.0)
+        if (area2 > 100.0)
           continue;
       }
       if (max <= area) {
@@ -179,7 +181,7 @@ private:
     cv::Point2f box[4];
     roiRect.points(box);
 #ifdef SHOW_IMG
-    cv::circle(image, box[0], 10, cv::Scalar(200), -1, 8, 0);
+    // cv::circle(dilateMat, box[0], 10, cv::Scalar(200), -1, 8, 0);
 #endif
 
     int boxIndex[2] = {-1, -1};
@@ -215,8 +217,10 @@ private:
     cv::fillPoly(mask, pp, n, 1, cv::Scalar(255));
 
     cv::copyTo(original, roi, mask);
-
-    // cv::imshow("roi", roi);
+#ifdef SHOW_IMG
+    cv::imshow("pre_roi", dilateMat);
+    cv::imshow("roi", roi);
+#endif
 
     return true;
   }
@@ -240,43 +244,60 @@ private:
     // cv::Mat grad;
     // addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0, image);
 
-    cv::imshow("roi", image);
-    cv::waitKey(10);
+    // cv::imshow("roi", image);
+    // cv::waitKey(10);
 
     cv::findContours(image, cors, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_NONE);
 
-    int sign;
+#ifdef SHOW_IMG
+    for (int i = 0; i < (int)cors.size(); i++) {
+      cv::drawContours(image, cors, i, cv::Scalar(200), 4);
+    }
+    cv::imshow("preProcessing", image);
+#endif
+    cv::Mat filledContour = cv::Mat::zeros(image.size(), CV_8UC1);
 
     std::vector<cv::Point2f> convex;
+    std::vector<cv::Point2f> approxcor;
+    int i = -1;
     for (auto cor : cors) {
-
+      i++;
       if (cv::contourArea(cor) < 800)
         continue;
+      cv::drawContours(filledContour, cors, i, cv::Scalar(255), -1);
 
-      double epsilon = cv::arcLength(cor, true) * 0.03;
-      cv::approxPolyDP(cor, cor, epsilon, true);
+      double epsilon = cv::arcLength(cor, true) * 0.00001;
+      cv::approxPolyDP(cor, approxcor, epsilon, true);
 
-      for (int cor_i_size = (int)cor.size(), j = cor_i_size,
+      for (int cor_i_size = (int)approxcor.size(), j = cor_i_size,
                dcor_i_size = 2 * cor_i_size;
            j < dcor_i_size; j++) {
-        if ((cor[(j - 1) % cor_i_size] - cor[j % cor_i_size])
-                .cross(cor[(j + 1) % cor_i_size] - cor[j % cor_i_size]) > 0) {
-          convex.push_back(cor[j % cor_i_size]);
+        cv::circle(filledContour, approxcor[j % cor_i_size], 10,
+                   cv::Scalar(100), -1);
+        if ((approxcor[(j - 1) % cor_i_size] - approxcor[j % cor_i_size])
+                .cross(approxcor[(j + 1) % cor_i_size] -
+                       approxcor[j % cor_i_size]) > 0) {
+          convex.push_back(approxcor[j % cor_i_size]);
         }
       }
     }
+    cv::imshow("co", filledContour);
 
     std::vector<cv::Point2f> convexFilted;
     auto roiCenter = roiRect.center;
-    roiCenter = roiCenter + (rCenter - roiCenter) * 0.3;
+    // roiCenter = roiCenter + (rCenter - roiCenter) * 0.3;
+#ifdef SHOW_IMG
+    cv::circle(original, roiCenter, 10, cv::Scalar(200, 100, 100), -1);
+#endif
     for (auto point : convex) {
       if ((roiCenter - point).dot(rCenter - point) > 0) {
         convexFilted.push_back(point);
 #ifdef SHOW_IMG
-        cv::circle(original, point, 10, cv::Scalar(100, 100, 100));
+        cv::circle(original, point, 10, cv::Scalar(100, 100, 100), -1);
 #endif
       }
     }
+    buff_natual_net_.Calculate(original, convexFilted);
     if (convexFilted.size() <= 0)
       return;
 
@@ -298,24 +319,28 @@ private:
       case 0:
 #ifdef SHOW_IMG
         cv::putText(original, "LB", h, 1, 5, cv::Scalar(255, 0, 100));
+        cv::circle(original, h, 5, cv::Scalar(255, 0, 0), -1);
 #endif
         sortedBox[3] = h;
         break;
       case 1:
 #ifdef SHOW_IMG
         cv::putText(original, "LT", h, 1, 5, cv::Scalar(255, 0, 100));
+        cv::circle(original, h, 5, cv::Scalar(255, 0, 0), -1);
 #endif
         sortedBox[0] = h;
         break;
       case 2:
 #ifdef SHOW_IMG
         cv::putText(original, "RT", h, 1, 5, cv::Scalar(255, 0, 100));
+        cv::circle(original, h, 5, cv::Scalar(255, 0, 0), -1);
 #endif
         sortedBox[1] = h;
         break;
       case 3:
 #ifdef SHOW_IMG
         cv::putText(original, "RB", h, 1, 5, cv::Scalar(255, 0, 100));
+        cv::circle(original, h, 5, cv::Scalar(255, 0, 0), -1);
 #endif
         sortedBox[2] = h;
         break;
@@ -335,20 +360,37 @@ private:
       camPos.push_back(point2push);
       cv::circle(original, point2push, 10, cv::Scalar(100, 255, 155));
     }
+
+    cv::TermCriteria criteria = cv::TermCriteria(
+        cv::TermCriteria::EPS + cv::TermCriteria::MAX_ITER, 40, 0.000001);
+    std::vector<cv::Point2f> coners;
+    for (auto p : camPos) {
+      cv::Mat mask = cv::Mat::zeros(image.size(), CV_8UC1);
+      cv::circle(mask, p, 8, cv::Scalar(255), -1);
+      cv::goodFeaturesToTrack(image, coners, 1, 0.99, 1, mask, 8);
+      if (coners.size() == 0)
+        continue;
+      cv::cornerSubPix(image, coners, cv::Size(8, 8), cv::Size(3, 3), criteria);
+      for (auto j : coners)
+        cv::circle(original, j, 5, cv::Scalar(200, 100, 155), -1);
+    }
 #ifdef SHOW_IMG
     cv::imshow("original", original);
     cv::waitKey(10);
 #endif
+    cv::imshow("result", original);
+    cv::waitKey(500);
   }
 
   cv::Mat original;
   cv::Point3f worldpoints[4]{
       cv::Point3f(-125, 225, 0), cv::Point3f(125, 125, 0),
       cv::Point3f(125, -125, 0), cv::Point3f(-125, -125, 0)};
-  cv::Point2f campoints[4]{};
   Eigen::Quaternionf rotate;
   Eigen::Vector3f position;
   std::queue<Eigen::Quaternionf> filter;
   PNPSolver pnpsolver;
+
+  buff_nocolor buff_natual_net_;
 };
 } // namespace EngineerVisual

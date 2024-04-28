@@ -1,6 +1,9 @@
 #include <cstdio>
 #include <geometry_msgs/msg/detail/pose_array__struct.hpp>
 #include <memory>
+#include <opencv2/core/mat.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/videoio.hpp>
 #include <rclcpp/qos.hpp>
 #include <thread>
 
@@ -37,15 +40,16 @@ private:
 
     FpsCounter fps_counter;
 
-    hikcamera::ImageCapturer::CameraProfile camera_profile;
-    {
-      using namespace std::chrono_literals;
-      camera_profile.exposure_time = 3ms;
-      camera_profile.gain = 16.9807;
-      camera_profile.invert_image = true;
-    }
-    hikcamera::ImageCapturer image_capturer(camera_profile);
+    // hikcamera::ImageCapturer::CameraProfile camera_profile;
+    // {
+    //   using namespace std::chrono_literals;
+    //   camera_profile.exposure_time = 3ms;
+    //   camera_profile.gain = 16.9807;
+    //   camera_profile.invert_image = true;
+    // }
+    // hikcamera::ImageCapturer image_capturer(camera_profile);
 
+    cv::VideoCapture cap("/workspaces/CEVT/Videos/t1.mp4");
     while (rclcpp::ok()) {
       if (fps_counter.count())
         RCLCPP_INFO(this->get_logger(), "fps: %d ", fps_counter.get_fps());
@@ -53,7 +57,10 @@ private:
       geometry_msgs::msg::Pose msg;
       visualization_msgs::msg::Marker ore_marker;
 
-      auto image = image_capturer.read();
+      // auto image = image_capturer.read();
+      cv::Mat image;
+      cap.read(image);
+      // cv::waitKey(0);
 
       detecter.Calculate(image);
 
