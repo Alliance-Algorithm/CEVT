@@ -227,68 +227,14 @@ private:
 
   void Processing(cv::Mat &image, cv::Point2f rCenter,
                   cv::RotatedRect roiRect) {
-
-    std::vector<std::vector<cv::Point>> cors;
-    cv::Mat grad_x, grad_y;
-    cv::Mat abs_grad_x, abs_grad_y;
-
-    // // 计算 x 方向的梯度
-    // Sobel(image, grad_x, CV_16S, 1, 0, 3);
-    // convertScaleAbs(grad_x, abs_grad_x);
-
-    // // 计算 y 方向的梯度
-    // Sobel(image, grad_y, CV_16S, 0, 1, 3);
-    // convertScaleAbs(grad_y, abs_grad_y);
-
-    // // 合并梯度（近似）
-    // cv::Mat grad;
-    // addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0, image);
-
-    // cv::imshow("roi", image);
-    // cv::waitKey(10);
-
-    cv::findContours(image, cors, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_NONE);
-
-#ifdef SHOW_IMG
-    for (int i = 0; i < (int)cors.size(); i++) {
-      cv::drawContours(image, cors, i, cv::Scalar(200), 4);
-    }
-    cv::imshow("preProcessing", image);
-#endif
-    cv::Mat filledContour = cv::Mat::zeros(image.size(), CV_8UC1);
-
-    std::vector<cv::Point2f> convex;
-    std::vector<cv::Point2f> approxcor;
-    int i = -1;
-    for (auto cor : cors) {
-      i++;
-      if (cv::contourArea(cor) < 800)
-        continue;
-      cv::drawContours(filledContour, cors, i, cv::Scalar(255), -1);
-
-      double epsilon = cv::arcLength(cor, true) * 0.00001;
-      cv::approxPolyDP(cor, approxcor, epsilon, true);
-
-      for (int cor_i_size = (int)approxcor.size(), j = cor_i_size,
-               dcor_i_size = 2 * cor_i_size;
-           j < dcor_i_size; j++) {
-        cv::circle(filledContour, approxcor[j % cor_i_size], 10,
-                   cv::Scalar(100), -1);
-        if ((approxcor[(j - 1) % cor_i_size] - approxcor[j % cor_i_size])
-                .cross(approxcor[(j + 1) % cor_i_size] -
-                       approxcor[j % cor_i_size]) > 0) {
-          convex.push_back(approxcor[j % cor_i_size]);
-        }
-      }
-    }
-    cv::imshow("co", filledContour);
-
-    std::vector<cv::Point2f> convexFilted;
-    auto roiCenter = roiRect.center;
     // roiCenter = roiCenter + (rCenter - roiCenter) * 0.3;
 #ifdef SHOW_IMG
     cv::circle(original, roiCenter, 10, cv::Scalar(200, 100, 100), -1);
 #endif
+    std::vector<cv::Point2f> convex;
+    std::vector<cv::Point2f> convexFilted;
+    auto roiCenter = roiRect.center;
+    buff_natual_net_.Calculate(original, convex);
     for (auto point : convex) {
       if ((roiCenter - point).dot(rCenter - point) > 0) {
         convexFilted.push_back(point);
@@ -297,7 +243,6 @@ private:
 #endif
       }
     }
-    buff_natual_net_.Calculate(original, convexFilted);
     if (convexFilted.size() <= 0)
       return;
 

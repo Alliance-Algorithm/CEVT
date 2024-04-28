@@ -37,5 +37,6 @@ include_directories(include src)
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+target_link_libraries(${PROJECT_NAME} libopenvino.so)
 
 ament_auto_package()

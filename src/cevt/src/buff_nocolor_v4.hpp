@@ -73,7 +73,8 @@ public:
     // step1:?????
     ov::Core core;
     // step2:??????
-    compile_model_ = core.compile_model("./models/buff_nocolor_v4.onnx", "GPU");
+    compile_model_ = core.compile_model(
+        "/workspaces/CEVT/models/buff_nocolor_v4.onnx", "CPU");
     infer_request_ = compile_model_.create_infer_request();
 
     if (compile_model_) {
@@ -88,6 +89,7 @@ public:
   }
 
   bool Calculate(cv::Mat &img, std::vector<cv::Point2f> &cors) {
+    cors.clear();
     // cv::cvtColor(img, img, cv::COLOR_BGR2GRAY);
     cv::Mat letterbox_img = letterbox(img);
     float scale = letterbox_img.size[0] / 352.0;
@@ -156,7 +158,6 @@ public:
       int height = int(h * scale);
       cv::rectangle(img, cv::Rect(left, top, width, height),
                     cv::Scalar(0, 0, 255), 1);
-      cors.clear();
       for (int j = 0; j < 5; j++) {
         float x = ToShoot.at<float>(0, 7 + j * 3) * scale;
         float y = ToShoot.at<float>(0, 7 + j * 3 + 1) * scale;
